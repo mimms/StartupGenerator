@@ -19,6 +19,7 @@
 		6D1D38972585321B006FF514 /* StartupGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D38962585321B006FF514 /* StartupGeneratorTests.swift */; };
 		6D1D38A22585321B006FF514 /* StartupGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D38A12585321B006FF514 /* StartupGeneratorUITests.swift */; };
 		6D1D38B525853A56006FF514 /* StartupIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D38B425853A56006FF514 /* StartupIdea.swift */; };
+		6D5FB522258B8B7800B227A5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6D5FB521258B8B7800B227A5 /* README.md */; };
 		6DB1B2DB2588A68400266E6A /* WebserviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1B2DA2588A68400266E6A /* WebserviceError.swift */; };
 		6DB1B2E52588D29F00266E6A /* Minion Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DB1B2E42588D29F00266E6A /* Minion Regular.ttf */; };
 		6DB1B2E62588D29F00266E6A /* Minion Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DB1B2E42588D29F00266E6A /* Minion Regular.ttf */; };
@@ -62,6 +63,7 @@
 		6D1D38A12585321B006FF514 /* StartupGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupGeneratorUITests.swift; sourceTree = "<group>"; };
 		6D1D38A32585321B006FF514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D1D38B425853A56006FF514 /* StartupIdea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupIdea.swift; sourceTree = "<group>"; };
+		6D5FB521258B8B7800B227A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6DB1B2DA2588A68400266E6A /* WebserviceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceError.swift; sourceTree = "<group>"; };
 		6DB1B2E42588D29F00266E6A /* Minion Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Minion Regular.ttf"; sourceTree = "<group>"; };
 		6DF6888E25890ED4002F3671 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		6D1D387825853216006FF514 = {
 			isa = PBXGroup;
 			children = (
+				6D5FB521258B8B7800B227A5 /* README.md */,
 				6D1D388325853216006FF514 /* StartupGenerator */,
 				6D1D38952585321B006FF514 /* StartupGeneratorTests */,
 				6D1D38A02585321B006FF514 /* StartupGeneratorUITests */,
@@ -312,6 +315,7 @@
 			files = (
 				6DB1B2E52588D29F00266E6A /* Minion Regular.ttf in Resources */,
 				6D1D388C2585321A006FF514 /* Preview Assets.xcassets in Resources */,
+				6D5FB522258B8B7800B227A5 /* README.md in Resources */,
 				6D1D38892585321A006FF514 /* Assets.xcassets in Resources */,
 				6DF6888F25890ED4002F3671 /* Credits.rtf in Resources */,
 			);
@@ -515,6 +519,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.StartupGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -537,6 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.StartupGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
