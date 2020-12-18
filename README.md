@@ -4,7 +4,7 @@ Generates funky startup ideas and describes them in terms of "It's like Facebook
 
 ## Description
 
-This is a very simple iOS project to try out SwiftUI.
+This is a very simple iOS project to try out SwiftUI (SwiftUI 2 Application Life Cycle, to be precise).
 It calls the [http://www.itsthisforthat.com/](http://www.itsthisforthat.com/) Web API to get startup ideas and displays them one at a time.
 
 ## Getting Started
