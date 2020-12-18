@@ -1,11 +1,11 @@
 # StartupGenerator
 
-Generates funky startup ideas and describes them in term of "It's like Facebook for cats."
+Generates funky startup ideas and describes them in terms of "It's like Facebook for cats."
 
 ## Description
 
 This is a very simple iOS project to try out SwiftUI.
-It calls the [http://www.itsthisforthat.com/](http://www.itsthisforthat.com/) Web API to get startup ideas and displays one at a time.
+It calls the [http://www.itsthisforthat.com/](http://www.itsthisforthat.com/) Web API to get startup ideas and displays them one at a time.
 
 ## Getting Started
 
@@ -33,5 +33,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Acknowledgments
 
-AppIcon made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/).
+* Startup idea web API [http://www.itsthisforthat.com/](http://www.itsthisforthat.com/)
+* AppIcon made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/).
 
