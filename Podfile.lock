@@ -1,0 +1,24 @@
+PODS:
+  - Sentry (6.0.12):
+    - Sentry/Core (= 6.0.12)
+  - Sentry/Core (6.0.12)
+
+DEPENDENCIES:
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `6.0.12`)
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 6.0.12
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 6.0.12
+
+SPEC CHECKSUMS:
+  Sentry: 8ffcfe3416e0a58b90bb1ae319e8e8a13022a03e
+
+PODFILE CHECKSUM: c1548f710e86f37e19d72e0ea4123479e7ed4ff0
+
+COCOAPODS: 1.10.0

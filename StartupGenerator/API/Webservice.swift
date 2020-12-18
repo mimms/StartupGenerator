@@ -7,6 +7,7 @@
 
 import Foundation
 import os.log
+import Sentry
 
 class Webservice {
     
@@ -19,14 +20,16 @@ class Webservice {
     
     static func loadNewIdea(completion:@escaping ( (Result<StartupIdea, WebserviceError>) -> Void )) {
         
-        let url = URL(URLConstants.API)
+        let url = URL(Constants.WebserviceAPIurl)
         
         os_log("Making API call... ", log: OSLog.networking, type: .debug)
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
-            guard let theData = data, error == nil else {
+            guard let data = data, error == nil else {
                 os_log("Couldn't get idea from API. url=%@, error=%@", log: OSLog.networking, type: .error, String(describing: url), String(describing: error))
+                SentrySDK.capture(message: "API error. url=\(url) error=\(String(describing: error))")
+
                 
                 if let error = error as NSError? {
                     switch error.code {
@@ -41,13 +44,14 @@ class Webservice {
                 return
             }
             
-            let response = try? JSONDecoder().decode(StartupIdea.self, from: theData)
+            let response = try? JSONDecoder().decode(StartupIdea.self, from: data)
             os_log("API responded. response=%@", log: OSLog.networking, type: .debug, String(describing: response))
             
             if let response = response {
                 completion(.success(response))
             } else {
                 os_log("API response could not be decoded.", log: OSLog.networking, type: .error)
+                SentrySDK.capture(message: "Decoding error for StartupIdea. data=\(data)")
                 completion(.failure(.couldNotDecode))
             }
             
