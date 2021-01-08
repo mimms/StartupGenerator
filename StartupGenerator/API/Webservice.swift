@@ -18,7 +18,7 @@ class Webservice {
      
      */
     
-    static func loadNewIdea(completion:@escaping ( (Result<StartupIdea, WebserviceError>) -> Void )) {
+    static func loadNewIdea(completion:@escaping ( (Result<WebserviceIdea, WebserviceError>) -> Void )) {
         
         let url = URL(Constants.WebserviceAPIurl)
         
@@ -44,7 +44,7 @@ class Webservice {
                 return
             }
             
-            let response = try? JSONDecoder().decode(StartupIdea.self, from: data)
+            let response = try? JSONDecoder().decode(WebserviceIdea.self, from: data)
             os_log("API responded. response=%@", log: OSLog.networking, type: .debug, String(describing: response))
             
             if let response = response {

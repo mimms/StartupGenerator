@@ -82,10 +82,10 @@ struct IdeaView: View {
 /// Displays the content of the app.
 struct ContentView: View {
     // The model our single source of truth.
-    @StateObject var model = StartupIdeaViewModel()
+    @StateObject var viewController = IdeaViewController()
 
     var body: some View {
-        IdeaView(idea: model.ideaDescription, action: model.fetchIdea)
+        IdeaView(idea: viewController.ideaDescription, action: viewController.getNewIdea)
     }
 }
 
